@@ -32,11 +32,11 @@
           </button>
         </div>
         <div v-for="(child, index) in children" :key="index" class="children-list">
-          <div class="input-container" style="margin-bottom: 0">
+          <div class="input-container" style="margin-bottom: 0; width: 100%">
             <label class="input-label" for="child_name">Имя</label>
             <input v-model="child.name" class="input" id="child_name" maxlength="40" required />
           </div>
-          <div class="input-container" style="margin-bottom: 0">
+          <div class="input-container" style="margin-bottom: 0; width: 100%">
             <label class="input-label" for="child_age">Возраст</label>
             <input
               v-model.number="child.age"
