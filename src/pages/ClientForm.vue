@@ -1,6 +1,6 @@
 <template>
   <div class="form-container">
-    <form class="form" @submit.prevent>
+    <form class="form" @submit.prevent="saveData">
       <h2 class="form-title">Персональные данные</h2>
       <div class="input-container">
         <label class="input-label" for="name">Имя</label>
@@ -54,14 +54,7 @@
         </div>
       </div>
 
-      <button
-        type="submit"
-        @click="saveData"
-        class="save-button"
-        :disabled="user.name === '' || user.age === null"
-      >
-        Сохранить
-      </button>
+      <button type="submit" class="save-button">Сохранить</button>
     </form>
   </div>
 </template>
